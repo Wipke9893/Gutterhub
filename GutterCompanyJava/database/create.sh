@@ -2,7 +2,7 @@
 export PGPASSWORD='postgres1'
 export PGCLIENTENCODING='UTF8'
 BASEDIR=$(dirname $0)
-DATABASE=GutterCompany
+DATABASE=gutter_company
 psql -U postgres -f "$BASEDIR/dropdb.sql" &&
 createdb -U postgres $DATABASE &&
 psql -U postgres -d $DATABASE -f "$BASEDIR/schema.sql" &&
