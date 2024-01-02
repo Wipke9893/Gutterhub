@@ -3,6 +3,12 @@
     <HeaderView />
   </div>
 
+  <div class="main">
+
+    <MainView />
+
+  </div>
+
   <div class="footer">
     <footerView />
   </div>
@@ -11,6 +17,7 @@
 
 <script>
 import HeaderView from "@/views/HeaderView.vue";
+import MainView from "@/views/MainView.vue";
 import FooterView from "@/views/FooterView.vue";
 
 export default {
@@ -22,6 +29,7 @@ export default {
 
   components: {
     HeaderView,
+    MainView,
     FooterView
   }
 };

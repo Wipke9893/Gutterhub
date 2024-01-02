@@ -6,6 +6,7 @@ import HomeView from '../views/HomeView.vue';
 import LoginView from '../views/LoginView.vue';
 import LogoutView from '../views/LogoutView.vue';
 import RegisterView from '../views/RegisterView.vue';
+import AboutView from '../views/AboutView.vue';
 
 
 // Define routes
@@ -42,6 +43,14 @@ const routes = [
     meta: {
       requiresAuth: false
     }
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: AboutView,
+    meta: {
+      requiresAuth: false
+    },
   }
 ];
 
