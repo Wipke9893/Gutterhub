@@ -91,7 +91,7 @@ export default {
   align-items: center;
   background-image: url("../assets/img/drone-shots-036.jpg");
   background-size: cover;
-  height: 40rem;
+  height: 38rem;
   background-repeat: no-repeat;
   background-position: bottom;
 }

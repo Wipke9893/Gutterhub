@@ -108,5 +108,10 @@
     position: absolute;
     left: 0;
   }
+
+  h2 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
   </style>
   
