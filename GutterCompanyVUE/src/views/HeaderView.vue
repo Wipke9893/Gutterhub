@@ -29,26 +29,37 @@ export default {
 <style scoped>
 .img {
   background-image: url("../assets/img/gutterlogo.png");
-  height: 20rem;
+  height: 20rem; /* You may adjust the height as needed */
   width: 100%;
-  background-size: 30%;
+  background-size: 100% 250%; /* Stretch the image horizontally, maintain aspect ratio */
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; /* Center the image */
 }
 
+.header {
+  width: 100%; /* Ensure the header spans the entire width */
+}
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1px;
   height: 3rem;
 }
 
 .nav-link {
-  color: #0e0e0e;
+  color: #000000;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.6rem;
+  border: none;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #2980b9;
 }
 
 </style>
