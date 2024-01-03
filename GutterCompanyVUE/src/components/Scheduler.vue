@@ -135,7 +135,6 @@ html {
   0 0 50px #03e9f4,
   0 0 100px #03e9f4;
 }
-
 .request-box a span {
   position: absolute;
   display: block;

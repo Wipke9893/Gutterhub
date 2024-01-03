@@ -45,6 +45,9 @@ header {
   background-color: rgba(73, 73, 73, 0.71);
 }
 
+.header {
+  width: 100%; /* Ensure the header spans the entire width */
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -56,7 +59,7 @@ header {
 .nav-link {
   color: white;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.6rem;
   font-weight: bold;
 }
