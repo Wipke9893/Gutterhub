@@ -21,7 +21,7 @@ export default {
   background-image: url("../assets/img/c1f748ef1194c95778e4ce6591004f6c.gif");
   height: 40rem;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 
 }
 
