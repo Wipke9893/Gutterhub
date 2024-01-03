@@ -13,7 +13,7 @@
           {{ registrationErrorMsg }}
         </div>
         <div class="form-input-group">
-          <label for="username">Username</label>
+          <label for="username">Email</label>
           <input type="text" id="username" v-model="user.username" required autofocus />
         </div>
         <div class="form-input-group">
@@ -24,7 +24,7 @@
           <label for="confirmPassword">Confirm Password</label>
           <input type="password" id="confirmPassword" v-model="user.confirmPassword" required />
         </div>
-        <button type="submit">Create Account</button>
+        <button type="submit" class="styled-button">Create Account</button>
         <p><router-link v-bind:to="{ name: 'login' }" class="white-link">Already have an account? Log in.</router-link>
         </p>
       </form>
@@ -95,10 +95,41 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/img/copper.jpg");
+  background-image: url("../assets/img/drone-shots-040.jpg");
   background-size: cover;
   height: 40rem;
   background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+.styled-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px transparent,
+  0 0 25px transparent,
+  0 0 50px transparent,
+  0 0 100px transparent;
+}
+
+.styled-button:hover {
+  background: #03e9f4;
+  color: #fff;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 100px #03e9f4;
 }
 
 </style>
