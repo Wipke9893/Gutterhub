@@ -3,6 +3,7 @@ import { useStore } from 'vuex'
 
 // Import components
 import HomeView from '../views/HomeView.vue';
+import ScheduleView from '../views/ScheduleView.vue';
 import LoginView from '../views/LoginView.vue';
 import LogoutView from '../views/LogoutView.vue';
 import RegisterView from '../views/RegisterView.vue';
@@ -15,6 +16,15 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
+    meta: {
+      requiresAuth: false
+    }
+  },
+
+  {
+    path: "/schedule",
+    name: "schedule",
+    component: ScheduleView,
     meta: {
       requiresAuth: false
     }

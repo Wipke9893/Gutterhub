@@ -1,8 +1,11 @@
 <template>
+  <div>
+    <header-view />
+  </div>
   <div id="login">
-    <div id="home">
-      <router-link v-bind:to="{ name: 'home' }" class="white-link">Home</router-link>
-    </div>
+<!--    <div id="home">-->
+<!--&lt;!&ndash;      <router-link v-bind:to="{ name: 'home' }" class="white-link">Home</router-link>&ndash;&gt;-->
+<!--    </div>-->
     <div id="register" class="text-center">
       <form v-on:submit.prevent="register">
         <h1>Create Account</h1>
@@ -27,13 +30,20 @@
       </form>
     </div>
   </div>
+  <div>
+    <footer-view />
+  </div>
 </template>
 
 <script>
 import authService from '../services/AuthService';
+import headerView from '@/views/HeaderView.vue'
+import footerView from '@/views/FooterView.vue'
 
 export default {
   components: {
+    headerView,
+    footerView
   },
   data() {
     return {
@@ -79,3 +89,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/copper.jpg");
+  background-size: cover;
+  height: 40rem;
+  background-repeat: no-repeat;
+}
+
+</style>
