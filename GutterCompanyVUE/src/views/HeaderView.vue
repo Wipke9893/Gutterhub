@@ -1,5 +1,10 @@
 <template>
   <header class="header">
+
+    <router-link v-bind:to="{ name: 'home' }" class="img">
+      <img src="../assets/img/man_holding_gutter_piece_thumbs_up.png" alt="">
+    </router-link>
+
   </header>
     <div class="nav">
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
@@ -54,6 +59,12 @@ header {
   padding: 0 1rem;
   font-size: 1.6rem;
   font-weight: bold;
+}
+img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 9rem;
+  height: 9rem;
 }
 
 </style>

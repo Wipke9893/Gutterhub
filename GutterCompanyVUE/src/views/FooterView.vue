@@ -42,6 +42,7 @@ a {
   justify-content: space-around;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 h2 {
   color: #009fd3;
