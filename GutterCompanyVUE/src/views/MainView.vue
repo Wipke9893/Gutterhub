@@ -1,23 +1,17 @@
 <template>
-<div class="main">
-  <h2> we are  up and running </h2>
-
+<div>
+  <slider :images="images" />
 </div>
+
 </template>
 
 <script>
-
+import Slider from "@/components/Slider.vue";
 export default {
-  data() {
-    return {
-
-    }
-  },
-  created() {
-
-  },
-}
-
+  components: {
+    Slider,
+  }
+};
 </script>
 
 <style scoped >
