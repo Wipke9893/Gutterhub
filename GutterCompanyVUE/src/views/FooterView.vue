@@ -2,8 +2,10 @@
 
 
   <div class="footer">
-    <h1>BlackGutter</h1>
-  </div>
+      <h2>Contact Us</h2>
+    <h2>Email: info@blakegutter.com</h2>
+    <h2>Phone: (123) 456-7890</h2>
+    </div>
 
 
 </template>
@@ -23,9 +25,14 @@ export default {
 
 <style scoped >
 .footer {
-  background-color: #630e0e;
-  color: #501111;
-  height: 20rem;
+  background-color: #494949;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 </style>

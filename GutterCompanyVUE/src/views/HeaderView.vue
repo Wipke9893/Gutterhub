@@ -1,16 +1,14 @@
 <template>
-  <div class ="img">
   <header class="header">
+  </header>
     <div class="nav">
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
+      <router-link v-bind:to="{ name: 'schedule' }" class="nav-link">Schedule</router-link>
       <router-link v-bind:to="{ name: 'login' }" v-if="!$store.state.token" class="nav-link">Login</router-link>
       <router-link v-bind:to="{ name: 'register' }" v-if="!$store.state.token" class="nav-link">Register</router-link>
       <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token" class="nav-link">Logout</router-link>
       <router-link v-bind:to="{ name: 'about' }" class="nav-link">About</router-link>
     </div>
-  </header>
-  </div>
-
 </template>
 
 <script>
@@ -27,13 +25,19 @@ export default {
 </script>
 
 <style scoped>
-.img {
-  background-image: url("../assets/img/gutterlogo.png");
-  height: 20rem; /* You may adjust the height as needed */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  background-size: 100% 250%; /* Stretch the image horizontally, maintain aspect ratio */
+  background-image: url("../assets/img/Blakegutter.webp");
   background-repeat: no-repeat;
-  background-position: center center; /* Center the image */
+  background-size: 127rem  20rem;
+  background-position: center;
+  height: 20rem;
+  background-color: rgba(73, 73, 73, 0.71);
 }
 
 .header {
@@ -41,25 +45,18 @@ export default {
 }
 .nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1px;
-  height: 3rem;
+  justify-content: space-between;
+  margin-top: 20rem;
+  background-color: rgb(0, 160, 213);
+
 }
 
 .nav-link {
-  color: #000000;
+  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.6rem;
-  border: none;
-  background-color: #3498db;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: #2980b9;
+  font-weight: bold;
 }
 
 </style>

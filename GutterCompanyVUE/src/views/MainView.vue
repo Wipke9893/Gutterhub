@@ -1,25 +1,27 @@
 <template>
-<div class="main">
-  <h2> we are  up and running </h2>
-
-</div>
+  <div class="rain">
+    <slider :images="images" />
+    <Reviews />
+  </div>
 </template>
 
 <script>
+import Slider from "@/components/Slider.vue";
+import Reviews from "@/components/Reviews.vue"; // Import the Reviews component
 
 export default {
-  data() {
-    return {
-
-    }
+  components: {
+    Slider,
+    Reviews, // Include the Reviews component
   },
-  created() {
-
-  },
-}
-
+};
 </script>
 
-<style scoped >
-
+<style scoped>
+.rain {
+  background-image: url("../assets/img/c1f748ef1194c95778e4ce6591004f6c.gif");
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+}
 </style>

@@ -4,9 +4,7 @@
   </div>
 
   <div class="main">
-
     <MainView />
-
   </div>
 
   <div class="footer">
