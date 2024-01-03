@@ -1,6 +1,9 @@
 <template>
-  <div class ="img">
+
+
   <header class="header">
+  </header>
+
     <div class="nav">
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
       <router-link v-bind:to="{ name: 'login' }" v-if="!$store.state.token" class="nav-link">Login</router-link>
@@ -8,8 +11,9 @@
       <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token" class="nav-link">Logout</router-link>
       <router-link v-bind:to="{ name: 'about' }" class="nav-link">About</router-link>
     </div>
-  </header>
-  </div>
+
+
+
 
 </template>
 
@@ -27,28 +31,35 @@ export default {
 </script>
 
 <style scoped>
-.img {
-  background-image: url("../assets/img/gutterlogo.png");
-  height: 20rem;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  background-size: 30%;
+  background-image: url("../assets/img/Blakegutter.webp");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-size: 127rem  20rem;
+  background-position: center;
+  height: 20rem;
+  background-color: rgba(73, 73, 73, 0.71);
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1px;
-  height: 3rem;
+  margin-top: 20rem;
+  background-color: rgb(0, 160, 213);
+
 }
 
 .nav-link {
-  color: #0e0e0e;
+  color: white;
   text-decoration: none;
   padding: 0 1rem;
   font-size: 1.6rem;
+  font-weight: bold;
 }
 
 </style>
