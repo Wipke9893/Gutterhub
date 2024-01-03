@@ -72,9 +72,10 @@ section {
 
 .infobox {
   border-radius: 5px;
-  background-color: rgba(73, 73, 73, 0.71);
+  background-color: rgb(79, 79, 79);
   padding: 1rem;
-  font-weight: 1.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
   color: rgb(0, 160, 213);
   margin: .2rem .2rem .2rem .2rem;
 }
@@ -94,7 +95,7 @@ section {
   width: 50%;
 }
 
-#nobullets {
+.nobullets {
   list-style: none;
   list-style-type: none;
   text-decoration: none;

@@ -3,8 +3,11 @@
     <div class="header">
       <HeaderView />
     </div>
+
+    <div class="background">
     <div class="scheduler">
       <Scheduler/>
+    </div>
     </div>
 
     <div class="footer">
@@ -34,5 +37,16 @@ export default {
 </script>
 
 <style scoped >
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/DJI_0322-2048x1536.jpg");
+  background-size: cover;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
 </style>

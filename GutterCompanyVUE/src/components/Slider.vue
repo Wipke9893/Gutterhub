@@ -18,7 +18,9 @@ export default {
     return {
       images: [
         "https://aussiegutterprotection.com.au/wp-content/uploads/2019/11/AGP-Photo-Batch-3-50-of-104.jpg",
+        "https://www.superiorseamless.com/wp-content/uploads/2018/09/20150610_103158-2.jpg",
         "https://images-na.ssl-images-amazon.com/images/I/91spkDHEleL.jpg",
+
       ],
       timer: null,
       currentIndex: 0
