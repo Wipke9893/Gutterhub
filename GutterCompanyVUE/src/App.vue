@@ -1,6 +1,6 @@
 <template>
   <div id="GutterCompany">
-  <RouterView />
+    <RouterView />
   </div>
 </template>
 

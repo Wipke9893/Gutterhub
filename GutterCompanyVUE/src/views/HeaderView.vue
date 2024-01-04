@@ -1,9 +1,6 @@
 <template>
-
-
   <header class="header">
   </header>
-
     <div class="nav">
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
       <router-link v-bind:to="{ name: 'schedule' }" class="nav-link">Schedule</router-link>
@@ -12,10 +9,6 @@
       <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token" class="nav-link">Logout</router-link>
       <router-link v-bind:to="{ name: 'about' }" class="nav-link">About</router-link>
     </div>
-
-
-
-
 </template>
 
 <script>

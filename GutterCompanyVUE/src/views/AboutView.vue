@@ -72,10 +72,10 @@ section {
 
 .infobox {
   border-radius: 5px;
-  background-color:cadetblue;
+  background-color: rgba(73, 73, 73, 0.71);
   padding: 1rem;
   font-weight: 1.5rem;
-  color: white;
+  color: rgb(0, 160, 213);
   margin: .2rem .2rem .2rem .2rem;
 }
 

@@ -3,7 +3,7 @@
     <div class="header">
       <HeaderView />
     </div>
-    <div>
+    <div class="scheduler">
       <Scheduler/>
     </div>
 
@@ -34,17 +34,5 @@ export default {
 </script>
 
 <style scoped >
-
-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
-
-
-
-
-
 
 </style>

@@ -4,13 +4,29 @@
             <h2>Schedule Estimate</h2>
             <form>
                 <div class="user-box">
-                <input type="text" name="" required="">
-                <label>Username</label>
+                <input type="text" name="" required>
+                <label>Name</label>
                 </div>
                 <div class="user-box">
-                <input type="password" name="" required="">
-                <label>Password</label>
+                <input type="email" name="" required>
+                <label>Email</label>
                 </div>
+                <div class="user-box">
+                <input type="address" name="" required>
+                <label>Address</label>
+                </div>
+                <!-- <div class="user-box">
+                <input type="city" name="" required>
+                <label>City</label>
+                </div>
+                <div class="user-box">
+                <input type="state" name="" required>
+                <label>State</label>
+                </div>
+                <div class="user-box">
+                <input type="zip" name="" required>
+                <label>Zip</label>
+                </div> -->
                 <a href="#">
                 <span></span>
                 <span></span>
@@ -35,16 +51,16 @@ EDIT ON
 html {
   height: 100%;
 }
-body {
-  margin:0;
+/* body {
+  margin:0rem;
   padding:0;
   font-family: sans-serif;
   background: linear-gradient(#141e30, #243b55);
-}
+} */
 
 .request-box {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   width: 400px;
   padding: 40px;
@@ -100,7 +116,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color:  #03e9f4;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -111,12 +127,12 @@ body {
 }
 
 .request-box a:hover {
-  background: #03e9f4;
+  background:  #03e9f4);
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
+  box-shadow: 0 0 5px  #03e9f4;
+              0 0 25px #03e9f4;
+              0 0 50px #03e9f4;
               0 0 100px #03e9f4;
 }
 
