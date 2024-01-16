@@ -6,9 +6,9 @@
     <section>
       <div class="infobox">
         <H1>About Gutter's R US</H1>
-        <p>We are a family owned and operatored gutter solution company. Specializing in custom solutions for each client
+        <p>We are a family owned and operated gutter solution company. Specializing in custom solutions for each client
           while striving for excellence.  We offer many solutions in gutters to enchance your curb appeal as well as solve
-          your drainage issues.  Servicing the greater Cincinnati, OH market area with out standing workmanship and 
+          your drainage issues.  Servicing the greater Cincinnati, OH market area with out standing workmanship and
           satisfied customers.  We offer complete installs as well as repairs.  New construction and existing homes.
           Hire the professional team that you can count on to do it right the first time.
         </p>
@@ -22,19 +22,30 @@
             <li class="nobullets">Existing homes repair</li>
             <li class="nobullets">Repair facsia board</li>
             <li class="nobullets">Gutter cleaning</li>
-            <li class="nobullets">Gutter leaf protection</li>
+            <li>Gutter leaf protection</li>
           </ul>
         </div>
         <div class="infobox" id="contact">
           <H1>Contact Info</H1>
           <ul class="nobullets">
-            <li class="nobullets">Address: 123 Main Street</li>
-            <li class="nobullets">City/State/Zip: Cincinnati, OH 45203</li>
-            <li class="nobullets">Email: somebody@guttersrus.com</li>
-            <li class="nobullets">Phone: 513-555-5555</li>
+            <li>Address: 123 Main Street</li>
+            <li>City/State/Zip: Cincinnati, OH 45203</li>
+            <li>Email: somebody@guttersrus.com</li>
+            <li>Phone: 513-555-5555</li>
           </ul>
+
+            <h2>Operating Hours</h2>
+            <ul>
+              <li>Monday: 8:00 AM - 5:00 PM</li>
+              <li>Tuesday: 8:00 AM - 5:00 PM</li>
+              <li>Wednesday: 8:00 AM - 5:00 PM</li>
+              <li>Thursday: 8:00 AM - 5:00 PM</li>
+              <li>Friday: 8:00 AM - 5:00 PM</li>
+              <li>Saturday: 8:00 AM - Noon</li>
+            </ul>
+          </div>
         </div>
-      </div>
+
     </section>
   </div>
   <div class="footer">
@@ -62,6 +73,7 @@ export default {
 </script>
 
 <style scoped >
+
 
 section {
   display: flex;
@@ -95,11 +107,7 @@ section {
   width: 50%;
 }
 
-.nobullets {
-  list-style: none;
-  list-style-type: none;
-  text-decoration: none;
-}
+
 
 
 </style>

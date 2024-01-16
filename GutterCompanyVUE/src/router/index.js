@@ -4,9 +4,6 @@ import { useStore } from 'vuex'
 // Import components
 import HomeView from '../views/HomeView.vue';
 import ScheduleView from '../views/ScheduleView.vue';
-import LoginView from '../views/LoginView.vue';
-import LogoutView from '../views/LogoutView.vue';
-import RegisterView from '../views/RegisterView.vue';
 import AboutView from '../views/AboutView.vue';
 
 
@@ -30,30 +27,6 @@ const routes = [
     }
   },
 
-  {
-    path: "/login",
-    name: "login",
-    component: LoginView,
-    meta: {
-      requiresAuth: false
-    }
-  },
-  {
-    path: "/logout",
-    name: "logout",
-    component: LogoutView,
-    meta: {
-      requiresAuth: false
-    }
-  },
-  {
-    path: "/register",
-    name: "register",
-    component: RegisterView,
-    meta: {
-      requiresAuth: false
-    }
-  },
   {
     path: "/about",
     name: "about",

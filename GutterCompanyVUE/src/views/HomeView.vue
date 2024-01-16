@@ -1,6 +1,7 @@
 <template>
   <div class="header">
     <HeaderView />
+
   </div>
 
   <div class="main">
@@ -35,5 +36,6 @@ export default {
 </script>
 
 <style scoped>
+
 
 </style>

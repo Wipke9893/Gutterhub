@@ -1,20 +1,22 @@
 <template>
   <header class="header">
-
-    <router-link v-bind:to="{ name: 'home' }" class="img">
-      <img src="../assets/img/man_holding_gutter_piece_thumbs_up.png" alt="">
-    </router-link>
-
-  </header>
+    <div class="text">
+      <h1>Gutter Installation</h1>
+      <h3>We come out to measure house and custom fit the gutter</h3>
+      <h3>no job is to big or small</h3>
+      <h2>We back our installation with a 1 year warranty</h2>
+      <h3>Free estimates</h3>
+    </div>
     <div class="nav">
+
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
       <router-link v-bind:to="{ name: 'schedule' }" class="nav-link">Schedule</router-link>
-      <router-link v-bind:to="{ name: 'login' }" v-if="!$store.state.token" class="nav-link">Login</router-link>
-      <router-link v-bind:to="{ name: 'register' }" v-if="!$store.state.token" class="nav-link">Register</router-link>
-      <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token" class="nav-link">Logout</router-link>
       <router-link v-bind:to="{ name: 'about' }" class="nav-link">About</router-link>
     </div>
+
+  </header>
 </template>
+
 
 <script>
 export default {
@@ -30,44 +32,50 @@ export default {
 </script>
 
 <style scoped>
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background-image: url("../assets/img/Blakegutter.webp");
-  background-repeat: no-repeat;
-  background-size: 127rem  20rem;
-  background-position: center;
-  height: 20rem;
-  background-color: rgba(73, 73, 73, 0.71);
-}
-
 .header {
-  width: 100%; /* Ensure the header spans the entire width */
+  background-image: url("../assets/img/image1.jpeg");
+  background-repeat: no-repeat;
+  background-color: #484848;
+  height: 18rem;
+  display: flex; /* Use flex to arrange children */
+  align-items: center; /* Center children vertically */
+  justify-content: flex-end; /* Align children to the right */
 }
+
 .nav {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20rem;
-  background-color: rgb(0, 160, 213);
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center children vertically */
+  padding: 1rem;
+}
 
+.text {
+  color : #37adf4;
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center text */
+  margin-right: 13rem; /* Add some space to the right of the text */
+}
+h2 {
+  color : #bb7901;
 }
 
 .nav-link {
-  color: white;
+  color: #37adf4;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.6rem;
   font-weight: bold;
-}
-img {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  width: 9rem;
-  height: 9rem;
+  box-shadow: 7px 7px 7px 0 rgba(2, 2, 2, 0.5);
+  margin: 0.5rem 0;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for background and text color */
 }
 
+.nav-link:hover {
+  background-color: #37adf4;
+  color: #ffffff;
+  transform: scale(1.05); /* Enlarge the nav link slightly */
+  cursor: pointer;
+}
 </style>

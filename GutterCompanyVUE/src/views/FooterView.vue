@@ -1,12 +1,8 @@
 <template>
-
-
   <div class="footer">
-    <a href="mailto:info@blakegutter.com">Email: info@blakegutter.com</a>
-    <h2>Phone: (123) 456-7890</h2>
+    <a href="mailto:coffey1311@hotmail.com">Email:Coffey1311@hotmail.com</a>
+    <h2>Phone:(513)480-3377</h2>
     </div>
-
-
 </template>
 
 <script>
@@ -17,7 +13,6 @@ export default {
     }
   },
   created() {
-
   },
 }
 </script>
