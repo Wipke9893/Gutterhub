@@ -1,6 +1,5 @@
 <template>
   <div class="reviews">
-    <h2>Top Reviews</h2>
     <div v-if="reviews.length > 0" class="review-item">
       <h3>{{ reviews[currentReviewIndex].title }}</h3>
       <p>{{ reviews[currentReviewIndex].content }}</p>
