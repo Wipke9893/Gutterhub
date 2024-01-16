@@ -44,7 +44,7 @@ export default {
   align-items: center;
   background-image: url("../assets/img/DJI_0322-2048x1536.jpg");
   background-size: cover;
-  height: 38rem;
+  height: 40rem;
   background-repeat: no-repeat;
   background-position: bottom;
 }
