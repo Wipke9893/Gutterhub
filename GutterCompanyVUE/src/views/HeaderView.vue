@@ -4,7 +4,7 @@
       <h1>Gutter Installation</h1>
       <h3>We come out to measure house and custom fit the gutter</h3>
       <h3>no job is to big or small</h3>
-      <h2>We back our installation with a 1 year warranty</h2>
+      <h2>&#9733; We back our installation with a 1 year warranty &#9733;</h2>
       <h3>Free estimates</h3>
     </div>
     <div class="nav">
