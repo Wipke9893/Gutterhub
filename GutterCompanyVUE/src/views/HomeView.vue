@@ -8,6 +8,7 @@
     <MainView />
   </div>
 
+
   <div class="footer">
     <footerView />
   </div>

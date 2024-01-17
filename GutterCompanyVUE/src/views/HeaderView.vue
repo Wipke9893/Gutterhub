@@ -8,12 +8,9 @@
       <h3>Free estimates</h3>
     </div>
     <div class="nav">
-
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
-      <router-link v-bind:to="{ name: 'schedule' }" class="nav-link">Schedule</router-link>
       <router-link v-bind:to="{ name: 'about' }" class="nav-link">About</router-link>
     </div>
-
   </header>
 </template>
 
@@ -45,6 +42,7 @@ export default {
 .nav {
   display: flex;
   flex-direction: column; /* Arrange children in a column */
+
   align-items: center; /* Center children vertically */
   padding: 1rem;
 }

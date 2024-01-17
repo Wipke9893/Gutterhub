@@ -15,18 +15,6 @@
                 <input type="address" name="" required>
                 <label>Address</label>
                 </div>
-                <!-- <div class="user-box">
-                <input type="city" name="" required>
-                <label>City</label>
-                </div>
-                <div class="user-box">
-                <input type="state" name="" required>
-                <label>State</label>
-                </div>
-                <div class="user-box">
-                <input type="zip" name="" required>
-                <label>Zip</label>
-                </div> -->
                 <a href="#">
                 <span></span>
                 <span></span>
@@ -51,12 +39,6 @@ EDIT ON
 html {
   height: 100%;
 }
-/* body {
-  margin:0rem;
-  padding:0;
-  font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
-} */
 
 .request-box {
   position: absolute;

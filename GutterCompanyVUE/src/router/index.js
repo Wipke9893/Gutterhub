@@ -3,7 +3,6 @@ import { useStore } from 'vuex'
 
 // Import components
 import HomeView from '../views/HomeView.vue';
-import ScheduleView from '../views/ScheduleView.vue';
 import AboutView from '../views/AboutView.vue';
 
 
@@ -13,15 +12,6 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    meta: {
-      requiresAuth: false
-    }
-  },
-
-  {
-    path: "/schedule",
-    name: "schedule",
-    component: ScheduleView,
     meta: {
       requiresAuth: false
     }
