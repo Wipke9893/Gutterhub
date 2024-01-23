@@ -105,6 +105,22 @@ export default {
   color: #FFD700;
   font-size: 20px;
 }
+/* Adjustments for medium devices like tablets and large phones */
+@media (max-width: 768px) {
+  .review-item {
+    height: auto; /* Flexible height */
+    padding: 10px;
+    /* Adjust font sizes for smaller screens */
+    font-size: 0.9rem;
+  }
+}
+
+/* Hide the reviews section completely on very small screens (below 598px) */
+@media (max-width: 598px) {
+  .reviews {
+    display: none;
+  }
+}
 
 </style>
-```
+

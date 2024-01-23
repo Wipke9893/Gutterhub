@@ -76,4 +76,44 @@ p {
   width: 18rem;
   padding: 1rem; /* Padding around the content */
 }
+
+@media (max-width: 768px) {
+  /* Adjustments for medium devices like tablets and large phones */
+  .rain {
+    height: auto; /* Flexible height */
+    background-size: contain; /* Adjust background size */
+  }
+
+  .reviews, .contact-cta {
+    width: 100%; /* Full width on smaller screens */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .contact-cta p {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .contact-cta button {
+    padding: 10px 24px; /* Smaller padding for buttons */
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for small devices like iPhones */
+  .reviews, .contact-cta {
+    padding: 0.5rem; /* Reduced padding */
+  }
+
+  .contact-cta p {
+    font-size: 1rem; /* Even smaller font size */
+  }
+
+  .contact-cta button {
+    padding: 8px 20px; /* Further reduced padding */
+    font-size: 12px; /* Even smaller font size */
+  }
+}
+
+
 </style>

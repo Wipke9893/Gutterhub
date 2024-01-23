@@ -37,6 +37,11 @@ export default {
 </script>
 
 <style scoped>
-
+@media (max-width: 600px) {
+  .header, .main, .footer {
+    /* Adjust layout and styling for smaller screens */
+    /* Example: stack elements vertically, adjust padding and font sizes, etc. */
+  }
+}
 
 </style>

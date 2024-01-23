@@ -19,7 +19,7 @@ export default {
 
 <style scoped >
 .footer {
-  background-color: #494949;
+  background-color: #ffffff;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -49,5 +49,26 @@ h2 {
   align-items: center;
   display: flex;
 }
+/* Adjustments for screens up to 768px wide (tablets and large phones) */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: auto; /* Flexible height */
+    padding: 10px 0;
+  }
+  a, h2 {
+    font-size: 1.2rem; /* Slightly smaller font */
+    padding: 5px 0;
+  }
+}
+
+/* Further adjustments for very small screens (like small iPhones) */
+@media (max-width: 320px) {
+  a, h2 {
+    font-size: 1rem; /* Even smaller font for very small screens */
+    padding: 3px 0;
+  }
+}
+
 
 </style>

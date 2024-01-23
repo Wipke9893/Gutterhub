@@ -106,8 +106,27 @@ section {
 #contact {
   width: 50%;
 }
+/* Adjustments for medium devices like tablets and large phones */
+@media (max-width: 768px) {
+  #infoarea {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #service, #contact {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
 
+/* Further adjustments for very small screens like small iPhones */
+@media (max-width: 480px) {
+  .infobox {
+    font-size: 1rem; /* Smaller font size */
+    padding: 0.5rem; /* Smaller padding */
+  }
+
+  /* You can also adjust other styles as needed for very small screens */
+}
 
 
 </style>

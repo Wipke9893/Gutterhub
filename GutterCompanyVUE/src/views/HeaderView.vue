@@ -1,11 +1,12 @@
 <template>
   <header class="header">
+    <img src="../assets/img/Blakegutter.webp" alt="">
     <div class="text">
-      <h1>Gutter Installation</h1>
+
       <h3>We come out to measure house and custom fit the gutter</h3>
       <h3>no job is to big or small</h3>
       <h2>&#9733; We back our installation with a 1 year warranty &#9733;</h2>
-      <h3>Free estimates</h3>
+      <h2>Free estimates</h2>
     </div>
     <div class="nav">
       <router-link v-bind:to="{ name: 'home' }" class="nav-link">Home</router-link>
@@ -29,10 +30,16 @@ export default {
 </script>
 
 <style scoped>
+
+img {
+  width: 50%;
+  height: 80%;
+  padding-right: 5rem;
+}
+
 .header {
-  background-image: url("../assets/img/image1.jpeg");
   background-repeat: no-repeat;
-  background-color: #484848;
+  background-color: #ffffff;
   height: 18rem;
   display: flex; /* Use flex to arrange children */
   align-items: center; /* Center children vertically */
@@ -48,7 +55,7 @@ export default {
 }
 
 .text {
-  color : #37adf4;
+  color : #000000;
   display: flex;
   flex-direction: column; /* Arrange children in a column */
   align-items: center; /* Center text */
@@ -76,4 +83,31 @@ h2 {
   transform: scale(1.05); /* Enlarge the nav link slightly */
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .header img {
+    width: 80%;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .text, .nav {
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
 </style>
